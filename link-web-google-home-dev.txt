@@ -1,0 +1,4 @@
+--link de scripts
+https://home.google.com/automations?hl=es-419
+--link documentacion
+https://developers.home.google.com/codelabs/create-a-scripted-automation
