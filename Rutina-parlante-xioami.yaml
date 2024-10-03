@@ -1,0 +1,182 @@
+metadata:
+  name: Rutina Parlante Xiaomi
+  description: Rutina general para definir las acciones a realizar con el Parlante Xiami diariamente.
+automations:
+  - starters:
+      - type: time.schedule
+        at: 05:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices: Parlante - Sala
+
+  - starters:
+      - type: time.schedule
+        at: 06:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices: Parlante - Sala
+      - type: time.delay
+        for: 10sec
+      - type: device.command.SetVolume
+        volumeLevel: 40
+        devices: Parlante - Sala
+      - type: assistant.command.OkGoogle
+        devices: Parlante - Sala
+        okGoogle: Reproducir la X medellin en tunein
+
+  - starters:
+      - type: time.schedule
+        at: 07:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices: Parlante - Sala
+      - type: time.delay
+        for: 10sec
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Información del clima?
+        devices: Parlante - Sala
+
+  - starters:
+      - type: time.schedule
+        at: 07:29
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices: Parlante - Sala
+      - type: time.delay
+        for: 10sec
+      - type: assistant.command.Broadcast
+        message: Es hora de irte a trabajar que tengas feliz día
+        devices: Parlante - Sala
+
+  - starters:
+      - type: time.schedule
+        at: 08:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices: Parlante - Sala
+      - type: time.delay
+        for: 10sec
+      - type: assistant.command.OkGoogle
+        devices: Parlante - Sala
+        okGoogle: Stop
+
+  - starters:
+      - type: time.schedule
+        at: 09:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices: Parlante - Sala
+
+  - starters:
+      - type: time.schedule
+        at: 10:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices: Parlante - Sala
+
+  - starters:
+      - type: time.schedule
+        at: 11:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices: Parlante - Sala
+
+  - starters:
+      - type: time.schedule
+        at: 12:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices: Parlante - Sala
+      - type: time.delay
+        for: 10sec
+      - type: device.command.SetVolume
+        volumeLevel: 50
+        devices: Parlante - Sala
+      - type: assistant.command.OkGoogle
+        devices: Parlante - Sala
+        okGoogle: Reproducir Rock FM en tunein
+
+  - starters:
+      - type: time.schedule
+        at: 13:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices: Parlante - Sala
+
+  - starters:
+      - type: time.schedule
+        at: 14:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices: Parlante - Sala
+      - type: time.delay
+        for: 10sec
+      - type: assistant.command.OkGoogle
+        devices: Parlante - Sala
+        okGoogle: Stop
+
+  - starters:
+      - type: time.schedule
+        at: 15:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices: Parlante - Sala
+
+  - starters:
+      - type: time.schedule
+        at: 16:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices: Parlante - Sala
+
+  - starters:
+      - type: time.schedule
+        at: 17:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices: Parlante - Sala
+
+  - starters:
+      - type: time.schedule
+        at: 18:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices: Parlante - Sala
+
+  - starters:
+      - type: time.schedule
+        at: 19:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices: Parlante - Sala
+  - starters:
+      - type: time.schedule
+        at: 20:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices: Parlante - Sala
+
+  - starters:
+      - type: time.schedule
+        at: 21:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices: Parlante - Sala
