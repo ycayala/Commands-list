@@ -1,0 +1,44 @@
+metadata:
+  name: Rutina lámpara sala
+  description: Rutina lampara sala
+automations:
+  - starters:
+      - type: time.schedule
+        at: 5:00
+    actions:
+      - type: device.command.BrightnessAbsolute
+        devices:
+          - Lámpara Sala - Sala
+        brightness: 70
+      - type: device.command.OnOff
+        devices:
+          - Lámpara Sala - Sala
+        on: true
+  - starters:
+      - type: time.schedule
+        at: 6:30
+    actions:
+      - type: device.command.OnOff
+        devices:
+          - Lámpara Sala - Sala
+        on: false
+  - starters:
+      - type: time.schedule
+        at: 18:00
+    actions:
+      - type: device.command.BrightnessAbsolute
+        devices:
+          - Lámpara Sala - Sala
+        brightness: 100
+      - type: device.command.OnOff
+        devices:
+          - Lámpara Sala - Sala
+        on: true
+  - starters:
+      - type: time.schedule
+        at: 22:00
+    actions:
+      - type: device.command.OnOff
+        devices:
+          - Lámpara Sala - Sala
+        on: false
