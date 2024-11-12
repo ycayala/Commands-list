@@ -1,0 +1,226 @@
+metadata:
+  name: Rutina Googolina
+  description: Rutina general para definir las acciones a realizar con la Googolina diariamente.
+automations:
+  - starters:
+      - type: time.schedule
+        at: 05:00
+    actions:
+      - type: device.command.SetVolume
+        volumeLevel: 50
+        devices: Googolina - Sala
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices:
+          - Googolina - Sala
+  - starters:
+      - type: time.schedule
+        at: 06:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices:
+          - Googolina - Sala
+      - type: time.delay
+        for: 10sec
+      - type: assistant.command.OkGoogle
+        devices:
+          - Googolina - Sala
+        okGoogle: Reproducir la X medellin en tunein
+
+  - starters:
+      - type: time.schedule
+        at: 07:00
+    actions:
+      - type: device.command.SetVolume
+        volumeLevel: 60
+        devices: Googolina - Sala
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices:
+          - Googolina - Sala
+      - type: time.delay
+        for: 10sec
+      - type: assistant.command.OkGoogle
+        okGoogle: Dime la frase del dia
+        devices:
+          - Googolina - Sala
+      - type: time.delay
+        for: 20sec
+      - type: assistant.command.OkGoogle
+        okGoogle: Indícame el clima para hoy
+        devices:
+          - Googolina - Sala
+
+
+  - starters:
+      - type: time.schedule
+        at: 07:29
+        weekdays:
+          - TUE
+          - WED
+          - THU
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices:
+          - Googolina - Sala
+      - type: time.delay
+        for: 5sec
+      - type: assistant.command.Broadcast
+        message: Es hora de irte a trabajar que tengas feliz día
+        devices:
+          - Googolina - Sala
+
+  - starters:
+      - type: time.schedule
+        at: 08:00
+        weekdays:
+          - MON
+          - TUE
+          - WED
+          - THU
+          - FRI
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices:
+          - Googolina - Sala
+      - type: time.delay
+        for: 10sec
+      - type: assistant.command.OkGoogle
+        devices:
+          - Googolina - Sala
+        okGoogle: Stop
+
+  - starters:
+      - type: time.schedule
+        at: 09:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices:
+          - Googolina - Sala
+
+  - starters:
+      - type: time.schedule
+        at: 10:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices:
+          - Googolina - Sala
+
+  - starters:
+      - type: time.schedule
+        at: 11:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices:
+          - Googolina - Sala
+
+  - starters:
+      - type: time.schedule
+        at: 12:00
+    actions:
+      - type: device.command.SetVolume
+        volumeLevel: 60
+        devices: Googolina - Sala
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices:
+          - Googolina - Sala
+      - type: time.delay
+        for: 10sec
+      - type: assistant.command.OkGoogle
+        devices:
+          - Googolina - Sala
+        okGoogle: Reproducir Rock FM en tunein
+
+  - starters:
+      - type: time.schedule
+        at: 13:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices:
+          - Googolina - Sala
+
+  - starters:
+      - type: time.schedule
+        at: 14:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices:
+          - Googolina - Sala
+      - type: time.delay
+        for: 10sec
+      - type: assistant.command.OkGoogle
+        devices:
+          - Googolina - Sala
+        okGoogle: Stop
+
+  - starters:
+      - type: time.schedule
+        at: 15:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices:
+          - Googolina - Sala
+
+  - starters:
+      - type: time.schedule
+        at: 16:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices:
+          - Googolina - Sala
+
+  - starters:
+      - type: time.schedule
+        at: 17:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices:
+          - Googolina - Sala
+
+  - starters:
+      - type: time.schedule
+        at: 18:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices:
+          - Googolina - Sala
+
+  - starters:
+      - type: time.schedule
+        at: 19:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices:
+          - Googolina - Sala
+
+  - starters:
+      - type: time.schedule
+        at: 20:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices:
+          - Googolina - Sala
+
+  - starters:
+      - type: time.schedule
+        at: 21:00
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: ¿Qué hora es?
+        devices:
+          - Googolina - Sala
