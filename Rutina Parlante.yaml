@@ -5,20 +5,35 @@ automations:
   - starters:
       - type: time.schedule
         at: 05:00
+      - type: time.schedule
         at: 06:00
+      - type: time.schedule
         at: 07:00
+      - type: time.schedule
         at: 08:00
+      - type: time.schedule
         at: 09:00
+      - type: time.schedule
         at: 10:00
+      - type: time.schedule
         at: 11:00
+      - type: time.schedule
         at: 12:00
+      - type: time.schedule
         at: 13:00
+      - type: time.schedule
         at: 14:00
+      - type: time.schedule
         at: 15:00
+      - type: time.schedule
         at: 16:00
+      - type: time.schedule
         at: 17:00
+      - type: time.schedule
         at: 19:00
+      - type: time.schedule
         at: 20:00
+      - type: time.schedule
         at: 21:00
     actions:
       - type: device.command.SetVolume
