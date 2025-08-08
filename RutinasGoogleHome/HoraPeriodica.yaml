@@ -1,5 +1,5 @@
 metadata:
-  name: Rutina Hora
+  name: Hora Periodica
   description: Decir la hora cada hora entre las 5am y 9pm
 automations:
   - starters:

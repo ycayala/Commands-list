@@ -1,0 +1,21 @@
+metadata:
+  name: Radio Rock FM Madrid
+  description: rutina para reproducir la radio Rock FM Madrid en parlantes
+automations:
+  - starters:
+      - type: assistant.event.OkGoogle
+        eventData: query
+        is: Rutina Radio Rock FM Madrid
+    actions:
+      - type: device.command.SetVolume
+        volumeLevel: 40
+        devices:
+          - Parlante - Bocinas
+      - type: device.command.SetVolume
+        volumeLevel: 50
+        devices:
+          - Googolina - Bocinas
+      - type: assistant.command.OkGoogle
+        okGoogle: Reproducir Radio Rock FM Madrid en tunein en dispositivos en parlanchinas
+        devices:
+          - Parlante - Bocinas

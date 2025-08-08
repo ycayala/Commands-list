@@ -1,0 +1,21 @@
+metadata:
+  name: Radio Tiempo Medellin
+  description: rutina para reproducir radio tiempo medellín en parlantes
+automations:
+  - starters:
+      - type: assistant.event.OkGoogle
+        eventData: query
+        is: Rutina Radio Tiempo Medellín
+    actions:
+      - type: device.command.SetVolume
+        volumeLevel: 40
+        devices:
+          - Parlante - Bocinas
+      - type: device.command.SetVolume
+        volumeLevel: 50
+        devices:
+          - Googolina - Bocinas
+      - type: assistant.command.OkGoogle
+        okGoogle: Reproducir Radio Tiempo Medellín en tunein en dispositivos en parlanchinas
+        devices:
+          - Parlante - Bocinas

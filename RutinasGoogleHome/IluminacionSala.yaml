@@ -1,0 +1,44 @@
+metadata:
+  name: Iluminacion Sala
+  description: Rutina lampara de salón para encender y apagar a horas especificas
+automations:
+  - starters:
+      - type: time.schedule
+        at: 5:00
+    actions:
+      - type: device.command.BrightnessAbsolute
+        devices:
+          - Lámpara de salón - Sala
+        brightness: 70
+      - type: device.command.OnOff
+        devices:
+          - Lámpara de salón - Sala
+        on: true
+  - starters:
+      - type: time.schedule
+        at: 6:30
+    actions:
+      - type: device.command.OnOff
+        devices:
+          - Lámpara de salón - Sala
+        on: false
+  - starters:
+      - type: time.schedule
+        at: 18:00
+    actions:
+      - type: device.command.BrightnessAbsolute
+        devices:
+          - Lámpara de salón - Sala
+        brightness: 100
+      - type: device.command.OnOff
+        devices:
+          - Lámpara de salón - Sala
+        on: true
+  - starters:
+      - type: time.schedule
+        at: 22:00
+    actions:
+      - type: device.command.OnOff
+        devices:
+          - Lámpara de salón - Sala
+        on: false
