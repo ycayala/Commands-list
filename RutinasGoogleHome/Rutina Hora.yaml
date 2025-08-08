@@ -1,0 +1,45 @@
+metadata:
+  name: Rutina Hora
+  description: Decir la hora cada hora entre las 5am y 9pm
+automations:
+  - starters:
+      - type: time.schedule
+        at: 5:00
+      - type: time.schedule
+        at: 6:00
+      - type: time.schedule
+        at: 7:00
+      - type: time.schedule
+        at: 8:00
+      - type: time.schedule
+        at: 9:00
+      - type: time.schedule
+        at: 10:00
+      - type: time.schedule
+        at: 11:00
+      - type: time.schedule
+        at: 12:00
+      - type: time.schedule
+        at: 13:00
+      - type: time.schedule
+        at: 14:00
+      - type: time.schedule
+        at: 15:00
+      - type: time.schedule
+        at: 16:00
+      - type: time.schedule
+        at: 17:00
+      - type: time.schedule
+        at: 18:00
+      - type: time.schedule
+        at: 19:00
+      - type: time.schedule
+        at: 20:00
+      - type: time.schedule
+        at: 21:00
+    actions:
+      - type: assistant.command.OkGoogle
+        devices:
+          - Parlante - Bocinas
+          - Googolina - Bocinas
+        okGoogle: ¿cuál es la hora?
