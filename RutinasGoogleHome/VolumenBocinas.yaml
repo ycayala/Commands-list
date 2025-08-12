@@ -1,0 +1,52 @@
+metadata:
+  name: Volumen Bocinas
+  description: Controla el volumen de las bocinas
+automations:
+  - starters:
+      - type: time.schedule
+        at: 4:59
+    actions:
+      - type: device.command.SetVolume
+        volumeLevel: 10
+        devices:
+          - Parlante - Bocinas
+      - type: device.command.SetVolume
+        volumeLevel: 20
+        devices:
+          - Googolina - Bocinas
+  - starters:
+      - type: time.schedule
+        at: 5:59
+    actions:
+      - type: device.command.SetVolume
+        volumeLevel: 30
+        devices:
+          - Parlante - Bocinas
+      - type: device.command.SetVolume
+        volumeLevel: 40
+        devices:
+          - Googolina - Bocinas
+  - starters:
+      - type: time.schedule
+        at: 6:59
+    actions:
+      - type: device.command.SetVolume
+        volumeLevel: 40
+        devices:
+          - Parlante - Bocinas
+      - type: device.command.SetVolume
+        volumeLevel: 50
+        devices:
+          - Googolina - Bocinas
+  - starters:
+      - type: time.schedule
+        at: 21:01
+    actions:
+      - type: device.command.SetVolume
+        volumeLevel: 10
+        devices:
+          - Parlante - Bocinas
+      - type: device.command.SetVolume
+        volumeLevel: 20
+        devices:
+          - Googolina - Bocinas

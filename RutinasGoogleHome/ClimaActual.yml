@@ -1,0 +1,12 @@
+metadata:
+  name: Clima Actual
+  description: Obtener pronóstico del tiempo a las 7:15 AM todos los dias.
+automations:
+  - starters:
+      - type: time.schedule
+        at: 6:45
+    actions:
+      - type: assistant.command.OkGoogle
+        devices:
+          - Googolina - Bocinas
+        okGoogle: Obtener pronóstico del tiempo

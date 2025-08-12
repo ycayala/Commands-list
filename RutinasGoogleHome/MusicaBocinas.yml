@@ -1,0 +1,60 @@
+metadata:
+  name: Musica en Bocinas
+  description: rutina para reproducir musica en bocinas
+automations:
+  - starters:
+      - type: time.schedule
+        at: 6:01
+        weekdays:
+          - MON
+          - TUE
+          - WED
+          - THU
+          - FRI
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: Reproducir la X medellín en tunein en dispositivos en parlanchinas
+        devices:
+          - Googolina - Bocinas
+  - starters:
+      - type: time.schedule
+        at: 8:01
+        weekdays:
+          - MON
+          - TUE
+          - WED
+          - THU
+          - FRI
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: Detener la reproducción en dispositivos en parlanchinas
+        devices:
+          - Googolina - Bocinas
+  - starters:
+      - type: time.schedule
+        at: 12:01
+        weekdays:
+          - MON
+          - TUE
+          - WED
+          - THU
+          - FRI
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: Reproducir Rock FM Madrid en dispositivos en parlanchinas
+        devices:
+          - Googolina - Bocinas
+  - starters:
+      - type: time.schedule
+        at: 2:01
+        weekdays:
+          - MON
+          - TUE
+          - WED
+          - THU
+          - FRI
+    actions:
+      - type: assistant.command.OkGoogle
+        okGoogle: Detener la reproducción en dispositivos en parlanchinas
+        devices:
+          - Googolina - Bocinas

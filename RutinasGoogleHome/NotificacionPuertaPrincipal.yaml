@@ -1,0 +1,14 @@
+metadata:
+  name: Notificacion Puerta Principal
+  description: Notificacion Puerta Principal
+automations:
+  - starters:
+      - type: device.state.OpenClose
+        device: Alarma con sensor de puerta - Entrada
+        state: openPercent
+        is: 100
+    actions:
+      - type: assistant.command.Broadcast
+        devices:
+          - Parlante - Bocinas
+        message: Puerta principal abierta!
