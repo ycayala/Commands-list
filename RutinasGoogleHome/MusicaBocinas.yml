@@ -13,7 +13,7 @@ automations:
           - FRI
     actions:
       - type: assistant.command.OkGoogle
-        okGoogle: Reproducir la X medellín en tunein en dispositivos en parlanchinas
+        okGoogle: Reproducir la X medellin en tunein en dispositivos en parlanchinas
         devices:
           - Googolina - Bocinas
   - starters:
@@ -27,7 +27,7 @@ automations:
           - FRI
     actions:
       - type: assistant.command.OkGoogle
-        okGoogle: Detener la reproducción en dispositivos en parlanchinas
+        okGoogle: Detener musica
         devices:
           - Googolina - Bocinas
   - starters:
@@ -41,12 +41,12 @@ automations:
           - FRI
     actions:
       - type: assistant.command.OkGoogle
-        okGoogle: Reproducir Rock FM Madrid en dispositivos en parlanchinas
+        okGoogle: Reproducir Radio Rock FM Madrid en tunein en dispositivos en parlanchinas
         devices:
           - Googolina - Bocinas
   - starters:
       - type: time.schedule
-        at: 2:01
+        at: 14:01
         weekdays:
           - MON
           - TUE
@@ -55,6 +55,6 @@ automations:
           - FRI
     actions:
       - type: assistant.command.OkGoogle
-        okGoogle: Detener la reproducción en dispositivos en parlanchinas
+        okGoogle: Detener musica
         devices:
           - Googolina - Bocinas
