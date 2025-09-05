@@ -16,6 +16,6 @@ automations:
         devices:
           - Googolina - Bocinas
       - type: assistant.command.OkGoogle
-        okGoogle: Reproducir Radio Tiempo Medellín en tunein en dispositivos en parlanchinas
+        okGoogle: Reproducir Radio Tiempo Medellín en parlanchinas
         devices:
-          - Parlante - Bocinas
+          - Googolina - Bocinas

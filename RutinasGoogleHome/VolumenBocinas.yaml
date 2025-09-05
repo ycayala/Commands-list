@@ -7,11 +7,11 @@ automations:
         at: 4:59
     actions:
       - type: device.command.SetVolume
-        volumeLevel: 10
+        volumeLevel: 20
         devices:
           - Parlante - Bocinas
       - type: device.command.SetVolume
-        volumeLevel: 20
+        volumeLevel: 30
         devices:
           - Googolina - Bocinas
   - starters:
@@ -43,10 +43,10 @@ automations:
         at: 21:01
     actions:
       - type: device.command.SetVolume
-        volumeLevel: 10
+        volumeLevel: 20
         devices:
           - Parlante - Bocinas
       - type: device.command.SetVolume
-        volumeLevel: 20
+        volumeLevel: 30
         devices:
           - Googolina - Bocinas

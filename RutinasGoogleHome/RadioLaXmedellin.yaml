@@ -1,5 +1,5 @@
 metadata:
-  name: Radio la X Medellin
+  name: Rutina Radio la X Medellin
   description: rutina para reproducir la radio X Medellin en parlantes
 automations:
   - starters:
@@ -16,6 +16,6 @@ automations:
         devices:
           - Googolina - Bocinas
       - type: assistant.command.OkGoogle
-        okGoogle: Reproducir la X medellin en tunein en dispositivos en parlanchinas
+        okGoogle: Reproducir la X medellin en parlanchinas
         devices:
-          - Parlante - Bocinas
+          - Googolina - Bocinas
