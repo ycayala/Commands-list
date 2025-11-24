@@ -1,0 +1,200 @@
+metadata:
+  name: Modo Navidad
+  description: Rutina para activar navidad en bombillas de la casa
+automations:
+  - starters:
+      - type: time.schedule
+        at: 18:05
+    actions:
+      - type: device.command.OnOff
+        devices:
+          - Kairós - Sala
+        on: true
+      - type: assistant.command.OkGoogle
+        okGoogle: reproducir All I Want for Christmas Is You en youtube
+        devices: Googolina - Bocinas
+      - type: time.delay
+        for: 67sec
+      - type: device.command.ColorAbsolute
+        devices:
+          - Lámpara Estudio - Estudio
+          - Habitación huéspedes - Habitación huéspedes
+          - Lámpara Cocina - Cocina
+          - Lámpara Comedor - Sala
+          - Lámpara de salón - Sala
+          - Lámpara Dormitorio - Habitación principal
+          - Lámpara Pasillo - Pasillo
+          - Lámpara TV - Sala
+        color:
+          name: red
+      - type: time.delay
+        for: 10sec
+      - type: device.command.ColorAbsolute
+        devices:
+          - Lámpara Estudio - Estudio
+          - Habitación huéspedes - Habitación huéspedes
+          - Lámpara Cocina - Cocina
+          - Lámpara Comedor - Sala
+          - Lámpara de salón - Sala
+          - Lámpara Dormitorio - Habitación principal
+          - Lámpara Pasillo - Pasillo
+          - Lámpara TV - Sala
+        color:
+          name: blue
+      - type: time.delay
+        for: 10sec
+      - type: device.command.ColorAbsolute
+        devices:
+          - Lámpara Estudio - Estudio
+          - Habitación huéspedes - Habitación huéspedes
+          - Lámpara Cocina - Cocina
+          - Lámpara Comedor - Sala
+          - Lámpara de salón - Sala
+          - Lámpara Dormitorio - Habitación principal
+          - Lámpara Pasillo - Pasillo
+          - Lámpara TV - Sala
+        color:
+          name: green
+      - type: time.delay
+        for: 10sec
+      - type: device.command.ColorAbsolute
+        devices:
+          - Lámpara Estudio - Estudio
+          - Habitación huéspedes - Habitación huéspedes
+          - Lámpara Cocina - Cocina
+          - Lámpara Comedor - Sala
+          - Lámpara de salón - Sala
+          - Lámpara Dormitorio - Habitación principal
+          - Lámpara Pasillo - Pasillo
+          - Lámpara TV - Sala
+        color:
+          name: yellow
+      - type: time.delay
+        for: 10sec
+      - type: device.command.ColorAbsolute
+        devices:
+          - Lámpara Estudio - Estudio
+          - Habitación huéspedes - Habitación huéspedes
+          - Lámpara Cocina - Cocina
+          - Lámpara Comedor - Sala
+          - Lámpara de salón - Sala
+          - Lámpara Dormitorio - Habitación principal
+          - Lámpara Pasillo - Pasillo
+          - Lámpara TV - Sala
+        color:
+          name: cyan
+      - type: time.delay
+        for: 10sec
+      - type: device.command.ColorAbsolute
+        devices:
+          - Lámpara Estudio - Estudio
+          - Habitación huéspedes - Habitación huéspedes
+          - Lámpara Cocina - Cocina
+          - Lámpara Comedor - Sala
+          - Lámpara de salón - Sala
+          - Lámpara Dormitorio - Habitación principal
+          - Lámpara Pasillo - Pasillo
+          - Lámpara TV - Sala
+        color:
+          name: magenta
+      - type: time.delay
+        for: 10sec
+      - type: device.command.ColorAbsolute
+        devices:
+          - Lámpara Estudio - Estudio
+          - Habitación huéspedes - Habitación huéspedes
+          - Lámpara Cocina - Cocina
+          - Lámpara Comedor - Sala
+          - Lámpara de salón - Sala
+          - Lámpara Dormitorio - Habitación principal
+          - Lámpara Pasillo - Pasillo
+          - Lámpara TV - Sala
+        color:
+          name: gray
+      - type: time.delay
+        for: 10sec
+      - type: device.command.ColorAbsolute
+        devices:
+          - Lámpara Estudio - Estudio
+          - Habitación huéspedes - Habitación huéspedes
+          - Lámpara Cocina - Cocina
+          - Lámpara Comedor - Sala
+          - Lámpara de salón - Sala
+          - Lámpara Dormitorio - Habitación principal
+          - Lámpara Pasillo - Pasillo
+          - Lámpara TV - Sala
+        color:
+          name: orange
+      - type: time.delay
+        for: 10sec
+      - type: device.command.ColorAbsolute
+        devices:
+          - Lámpara Estudio - Estudio
+          - Habitación huéspedes - Habitación huéspedes
+          - Lámpara Cocina - Cocina
+          - Lámpara Comedor - Sala
+          - Lámpara de salón - Sala
+          - Lámpara Dormitorio - Habitación principal
+          - Lámpara Pasillo - Pasillo
+          - Lámpara TV - Sala
+        color:
+          name: violet
+      - type: time.delay
+        for: 10sec
+      - type: device.command.ColorAbsolute
+        devices:
+          - Lámpara Estudio - Estudio
+          - Habitación huéspedes - Habitación huéspedes
+          - Lámpara Cocina - Cocina
+          - Lámpara Comedor - Sala
+          - Lámpara de salón - Sala
+          - Lámpara Dormitorio - Habitación principal
+          - Lámpara Pasillo - Pasillo
+          - Lámpara TV - Sala
+        color:
+          name: pink
+      - type: time.delay
+        for: 10sec
+      - type: device.command.ColorAbsolute
+        devices:
+          - Lámpara Estudio - Estudio
+          - Habitación huéspedes - Habitación huéspedes
+          - Lámpara Cocina - Cocina
+          - Lámpara Comedor - Sala
+          - Lámpara de salón - Sala
+          - Lámpara Dormitorio - Habitación principal
+          - Lámpara Pasillo - Pasillo
+          - Lámpara TV - Sala
+        color:
+          name: white
+      - type: time.delay
+        for: 10sec
+      - type: device.command.ColorAbsolute
+        devices:
+          - Lámpara Estudio - Estudio
+          - Habitación huéspedes - Habitación huéspedes
+          - Lámpara Cocina - Cocina
+          - Lámpara Comedor - Sala
+          - Lámpara de salón - Sala
+          - Lámpara Dormitorio - Habitación principal
+          - Lámpara Pasillo - Pasillo
+          - Lámpara TV - Sala
+        color:
+          name: warm white
+      - type: time.delay
+        for: 10sec
+      - type: device.command.OnOff
+        devices:
+          - Lámpara Estudio - Estudio
+          - Habitación huéspedes - Habitación huéspedes
+          - Lámpara Cocina - Cocina
+          - Lámpara Comedor - Sala
+          - Lámpara TV - Sala
+          - Lámpara Dormitorio - Habitación principal
+          - Lámpara Pasillo - Pasillo
+        on: false
+      - type: time.delay
+        for: 60sec
+      - type: assistant.command.OkGoogle
+        okGoogle: detener musica
+        devices: Googolina - Bocinas
